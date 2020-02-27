@@ -34,7 +34,7 @@ body{
     padding: 0 15px;
 }
 
-.container-fluiid {
+.container-fluid {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 30px;
@@ -43,4 +43,14 @@ body{
     .container-fluid {
         padding: 0 15px;
     }
+}
+
+
+.title {
+    color: $bg;
+    font-weight: 700;
+    text-align: center;
+    line-height: 60px;
+    font-size: 36px;
+    margin-bottom: 30px;
 }
