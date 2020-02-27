@@ -139,7 +139,7 @@ padding: 155px 0px 100px;
     .products__inner-btn{
         text-align: center;
         margin-bottom: 60px;
-
+    
          button {
         font-weight: 500;
         background-color: #fff;
@@ -151,12 +151,16 @@ padding: 155px 0px 100px;
         & + button {
             margin-left: 5px;
              }
-        
+        &.mixitup-control-active {
+            outline: none;
+            color: #fff;
+            background-color: $red;
+        }
          }
     }
     .products__inner-box{
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         flex-wrap: wrap;
     }
 
@@ -166,6 +170,12 @@ padding: 155px 0px 100px;
         max-width: 442px;
         width: 100%;
         margin-bottom: 30px;
+&+.product__item{
+    margin-left: 10px;
+}
+        
+
+
         &-img {
             min-height: 250px;
             background-repeat: no-repeat;
@@ -240,6 +250,9 @@ padding: 155px 0px 100px;
       
         text-align: center;
         button { 
+            cursor: pointer;
+            padding: 20px 30px;
+            color:$bg;
             margin: 45px 5px 0;
             box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
             background-color: #fff;

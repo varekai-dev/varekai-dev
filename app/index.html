@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Moderno</title>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&display=swap" rel="stylesheet">
 
 </head>
@@ -145,16 +146,16 @@
             </div>
             <div class="products__inner">
                 <div class="products__inner-btn">
-                    <button>All</button>
-                    <button>Wordpress</button>
-                    <button>Joomla</button>
-                    <button>Plugins</button>
-                    <button>Components</button>
-                    <button>PSD</button>
+                    <button  type="button" data-filter="all">All</button>
+                    <button  type="button" data-filter=".category-wordpress">Wordpress</button>
+                    <button  type="button" data-filter=".category-joomla">Joomla</button>
+                    <button  type="button" data-filter=".category-plugins">Plugins</button>
+                    <button  type="button"  data-filter=".category-components">Components</button>
+                    <button  type="button" data-filter=".category-psd">PSD</button>
                 </div>
 
                 <div class="products__inner-box">
-                    <div class="product__item">
+                    <div class="product__item mix category-wordpress">
                         <a class="product__item-img" style="background-image: url(images/content/product-item.jpg);">
                         </a>
 
@@ -185,7 +186,7 @@
                     </div>
 
 
-                    <div class="product__item">
+                    <div class="product__item mix category-psd">
                         <a class="product__item-img" style="background-image: url(images/content/product-item.jpg);">
                         </a>
 
@@ -215,7 +216,7 @@
                         </div>
                     </div>
 
-                    <div class="product__item">
+                    <div class="product__item mix category-joomla">
                         <a class="product__item-img" style="background-image: url(images/content/product-item.jpg);">
                         </a>
 
@@ -245,7 +246,7 @@
                         </div>
                     </div>
 
-                    <div class="product__item">
+                    <div class="product__item  category-popular mix category-wordpress">
                         <a class="product__item-img" style="background-image: url(images/content/product-item.jpg);">
                         </a>
 
@@ -276,7 +277,7 @@
                     </div>
 
 
-                    <div class="product__item">
+                    <div class="product__item category-popular mix category-psd">
                         <a class="product__item-img" style="background-image: url(images/content/product-item.jpg);">
                         </a>
 
@@ -306,7 +307,7 @@
                         </div>
                     </div>
 
-                    <div class="product__item">
+                    <div class="product__item mix category-plugins">
                         <a class="product__item-img" style="background-image: url(images/content/product-item.jpg);">
                         </a>
 
@@ -336,7 +337,7 @@
                         </div>
                     </div>
 
-                    <div class="product__item">
+                    <div class="product__item mix category-new category-plugins">
                         <a class="product__item-img" style="background-image: url(images/content/product-item.jpg);">
                         </a>
 
@@ -366,7 +367,7 @@
                         </div>
                     </div>
 
-                    <div class="product__item">
+                    <div class="product__item mix category-new category-components">
                         <a class="product__item-img" style="background-image: url(images/content/product-item.jpg);">
                         </a>
 
@@ -401,10 +402,10 @@
 
 
             <div class="products__bottom-btn">
-                <button>
+                <button type="button" data-filter=".category-new">
                     All New Items
                 </button>
-                <button>
+                <button type="button" data-filter=".category-popular">
                     Popular Items
                 </button>
             </div>
@@ -417,7 +418,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
