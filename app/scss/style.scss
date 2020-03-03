@@ -363,7 +363,27 @@
     max-width: 370px;
     text-align: center;
     padding: 0px 15px;
+
+    &:hover {
+        .advantages__item-images {
+            background-color: $green;
+            & svg {
+              color: $green;
+            }
+        }
+        .advantages__item-title {
+            color: $green;
+        }
+
+        .advantages__item-images {
+            svg {
+                fill:#fff;
+            }
+        }
+
+    }
     &-images {
+        transition: all .5s;
         width: 114px;
         height: 114px;
         background-color: #fff;
@@ -371,11 +391,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0  30px auto;
+        margin: 0 auto 30px;
 
     }
 
     &-title{
+        transition: all .5s;
         margin-bottom: 25px;
         font-size: 24px;
         color: #fff;
@@ -383,9 +404,21 @@
     }
 
     &-text {
-
+        font-size: 15px;
     }
+
+    
 }
 
+.icosvg-1 {
+    svg {   width: 60px;}
+ 
 
+}
+.icosvg-2 {
+    svg {   width: 60px;}
+}
+.icosvg-3 {
+    svg {   width: 90px;}
+}
 //end advantages section
