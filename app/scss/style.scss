@@ -80,6 +80,17 @@
     background-size: cover;
     background-position: center;
     min-height: 530px;
+
+    &.page-search{
+        min-height: 230px;
+        .search__inner{
+            padding: 55px 0 70px;
+        
+        &-text{
+            margin-bottom: 20px;
+        }
+    }
+    }
 }
 
 .search__inner {
@@ -691,7 +702,31 @@ background-position: -56px -0;
     }
 }
 
-
-
-
 //end footer
+// start product page
+
+.product-page__inner {
+    display: flex;
+}
+.product-page__aside {
+    margin-right: 30px;
+}
+
+.aside__item {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    padding: 0 32px 32px;
+    margin-bottom: 30px;
+    width: 270px;
+}
+
+.aside__title {
+    @include f700;
+    border-bottom: 1px solid #dde3e8;
+    color: $bg;
+    font-size: 20px;
+    padding: 22px 0px 19px;
+}
+
+
+// end product page
