@@ -203,14 +203,14 @@ background-color: $yellow;
          
       }
 }
-.basket__menu{
-position: absolute;
-top: 69px;
 
-
-}
 .user__box,
-.basket__box {
+.basket__box,
+.notification__box,
+.message__box
+
+{
+   
     height: 90px;
     margin-top: 42px;
     position: relative;
@@ -224,25 +224,62 @@ top: 69px;
         }
     }
 }
-
-.basket__box {
-
-    margin-left: 15px;
+.circle__menu{
+    transition: all .3s;
+    position: absolute;
+    top: 62px;
     border-top: 1px solid #e0e0e0 ;
+    right: -12px;
+    height: 0;
+    overflow: hidden;
+    }
+.basket__box,
+.notification__box,
+.message__box {
+    &:hover{
+        .header__circle::before {
+            color: $bg;
+        }
+        .circle__menu {
+            overflow: hidden;
+            height: auto;
+        }
+        .circle__item{
+            padding: 23px ;
+            border-width: 1px;
+        }
+    }
+    margin-top: 54px;
+    margin-left: 15px;
+  
 }
-.basket__item {
+.circle__item {
+   
+    transition: all .3s;
+    position: relative;
     background-color: #fff;
-    border: 1px solid #e0e0e0;
-    padding: 23px;
+    border: 0px solid #e0e0e0;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    padding: 0 23px;
     border-top: none;
     width: 270px;
     display: flex;
     align-items: center;
+    &::before {
+        font-size: 16px;
+        color: #b0bec5;
+        position: absolute;
+        right: 28px;
+        top: 27px;
+    }
+   
 }
-.basket__images{
+
+.circle__images{
     margin-right: 15px;
 }
-.basket__info {
+.circle__info {
     line-height: 20px;
     &-name {
         @include f700;
@@ -259,7 +296,10 @@ top: 69px;
         font-size: 16px;
     }
 }
-
+.circle__info-data{
+    font-size: 10px;
+    color: #707070;
+}
 .basket__summ {
     background-color: #fff;
     padding: 16px 17px 12px;
@@ -285,7 +325,7 @@ top: 69px;
     font-size: 14px;
     padding: 12px 5px;
     text-align: center;
-    width: 105px;
+    width: 100px;
 
 }
 .basket__btn-checkout {
@@ -293,6 +333,24 @@ top: 69px;
     width: 123px;
     margin-left: 6px;
 }
+
+
+.notification__menu, 
+.message__menu {
+    .circle__images {
+        margin-right: 20px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+    .circle__info{
+        line-height: 18px;
+    }
+}
+    .icons-color::before {
+          color: $tomato;
+      }
+    
 
 // end header
 
