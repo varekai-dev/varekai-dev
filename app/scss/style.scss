@@ -5,9 +5,12 @@
 
 
 // start header
+.header {
+    background-color: #fff;
+}
 
 .header__top-inner {
-    
+  
     display: flex;
     justify-content: space-between;
     height: 90px;
@@ -122,6 +125,7 @@ background-color: $yellow;
     }
 }
 .basket  {
+    margin-right: 20px;
     span {
         background-color: $green;
     }
@@ -138,7 +142,7 @@ background-color: $yellow;
 
 .user {
     position: relative;
-    margin-left: 20px;
+   
     margin-right: 25px;
     padding-right: 20px;
 
@@ -211,7 +215,7 @@ background-color: $yellow;
 .message__box
 
 {
-   
+   z-index: 1;
     height: 90px;
     margin-top: 42px;
     position: relative;
@@ -226,6 +230,7 @@ background-color: $yellow;
     }
 }
 .circle__menu{
+    z-index: 1;
     transition: all .3s;
     position: absolute;
     top: 62px;
@@ -351,7 +356,12 @@ background-color: $yellow;
     .icons-color::before {
           color: $tomato;
       }
-    
+
+      .header__btn-menu,
+      .menu__btn {
+          display: none;
+      }
+
 
 // end header
 
