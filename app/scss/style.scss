@@ -1980,14 +1980,16 @@ padding-bottom: 25px;
 
 //start page 404
 .page-404__wrapper,
-.about__wrapper {
+.about__wrapper,
+.contact__wrapper {
     border: 1px solid #dcdcdc;
     background-color: #fff;
     margin-bottom: 150px;
 }
 
 .page-404__head,
-.about__head {
+.about__head,
+.contact__head {
     @include f500;
     font-size: 24px;
     color: #000;
@@ -2070,5 +2072,12 @@ margin-bottom: 40px;
 
 
 //end about
+
+
+//start contact
+
+
+
+//end contact
 
 @import 'media';
