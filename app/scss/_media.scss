@@ -74,6 +74,27 @@
     }
 }
 
+@media (max-width: 740px) {
+    .page-404__404 {
+    font-size: 200px;
+    line-height: 200px;
+}
+.page-404__title{
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.page-404__text{
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.page-404__link{
+    padding: 10px 30px 8px;
+}
+
+
+}
+
 @media (max-width: 640px) {
 
     .notification__box,
@@ -84,6 +105,18 @@
     .circle__menu {
         right: auto;
     }
+
+}
+@media (max-width: 600px) {
+    .page-404__inner{
+        padding: 0 15px;
+    }
+    .page-404__404 {
+        font-size: 120px;
+        line-height: 120px;
+    }
+   
+  
 
 }
 

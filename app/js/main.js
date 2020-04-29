@@ -47,6 +47,8 @@ $(function(){
     $('.header__box').toggleClass('active');
   });
 
+
+  
   
   $('.product-one__tabs .tab, .settings__tabs .tab').on('click', function(event) {
     var id = $(this).attr('data-id');
@@ -58,9 +60,10 @@ $(function(){
     });
 
    
+   
     var mixer = mixitup('.products__inner-box');
 
 
-
+    $('input').styler();
 
 });
